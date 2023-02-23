@@ -1,3 +1,286 @@
+/* global styles */
+
 body {
-    background-color:blue;
+    font-family:sans-serif;
+    background-color:rgb(18, 103, 103);
+    color:#F5F5F5;
+    min-height:100vh;
+    width:80%;
+    margin:auto;
 }
+
+section {
+    min-height:100vh;
+}
+
+h1 {
+    font-size:4em;
+}
+
+h2 {
+    font-size:3em;
+    color:#282828;
+    border-bottom: 5px solid #282828;
+    padding:5% 0 2% 0;
+}
+
+h3 {
+    font-size:1.5em;
+}
+
+p {
+    line-height:150%;
+    font-size:1em;
+}
+
+/* NAV bar */
+
+nav {
+    float:right;
+    padding:30px;
+}
+
+nav a {
+    background-color:#282828;
+    color:#F5F5F5;
+    text-decoration:none;
+    padding:8px;
+    margin:0 0 0 30px;
+    border:3px solid #282828;
+    border-radius: 10px 100px / 120px;
+    position:sticky; /* WHY NOT WORKING? */
+}
+
+nav a:hover {
+    color: teal;
+    font-weight:bold;
+    text-decoration: underline;
+    padding:12px
+}
+
+nav a:active {
+    background-color:#F5F5F5;
+    border-color:#282828;
+}
+ /* end NAV bar */
+
+ /* INTRO */
+
+
+main #introduction {
+    display:block;
+    clear:right;
+    margin:auto;
+    width:80%;
+    text-align:center;
+    padding-top:5%;
+}
+
+
+#info {
+    border-left: 8px solid #282828;
+    border-bottom: 8px solid #282828;
+    border-radius:2px;
+    padding:1% 2% 5% 5%;
+    text-align:center;
+    animation-name:rainbow;
+    animation-duration:3s;
+}
+
+@keyframes rainbow {
+    0% {border-color:red;}
+    14% {border-color:orange;}
+    28% {border-color:yellow;}
+    42% {border-color: green;}
+    56% {border-color:blue;}
+    70% {border-color:indigo;}
+    84% {border-color:violet;}
+}
+
+#info .left {
+    text-align: left;
+}
+
+#info .right {
+    text-align: right;
+}
+
+/* end INTRO */
+
+/* start ABOUT ME */
+
+
+
+#about #portrait {
+    float:right;
+    width:30%;
+    margin:0 5%;
+    border:5px solid #282828;
+    filter:grayscale(100%);
+}
+
+#about #portrait:hover {
+    filter:grayscale(0%);
+}
+
+/* end ABOUT ME */
+
+/* start SKILLS/EXPERIENCE */
+
+
+
+#skills .topics {
+    column-count:2;
+}
+
+#skills ul {
+    list-style:none;
+}
+
+
+aside {
+    background-color:#282828;
+    width:20%;
+    padding:2%;
+    margin:0;
+    border-radius:1%;
+    float:right;
+}
+
+/* start WORK */
+
+/* end WORK */
+
+.grid-work {
+    display:grid;
+    grid-template:1fr 1fr / 1fr 1fr 1fr;
+    gap:1rem;
+    padding:0 5%;
+}
+
+.box {
+    display:grid;
+    align-items:center;
+    justify-items:center;
+    padding:0.5rem;
+    min-height:30vh;
+    font-size:2.5rem;
+}
+
+.box:first-child {
+    background-color: #C0C0C0;
+    color:#181818;
+    grid-column:1/3;
+    grid-row:1/2;
+}
+
+.box:nth-child(2) {
+    background-color:#909090;
+    color:#404040;
+    grid-column:3/4;
+    grid-row:1/3;
+}
+
+.box:nth-child(3) {
+    background-color:#404040;
+    color:#909090;
+}
+
+.box:nth-child(4) {
+    background-color:#181818;
+    color: #C0C0C0;
+}
+
+
+/* start CONTACT */
+
+table {
+    width:100%;
+}
+
+table td {
+    padding-bottom:2%;
+}
+
+table a {
+    color:#F5F5F5;
+    text-decoration: none;
+}
+
+table a:hover {
+    text-decoration:underline;
+}
+
+form {
+    width:100%;
+}
+
+::placeholder {
+    color:#F5F5F5;
+    font-family:sans-serif;
+    padding:0 0 0 5px;
+}
+
+input {
+    box-sizing:border-box;
+    padding:10px 0;
+    margin:4px 0;
+    background-color:#282828;
+    width:100%;
+}
+
+input:focus {
+    outline:none;
+    border:2px solid #F5F5F5;
+}
+
+input[type=submit] {
+    background-color:#282828;
+    color:#F5F5F5;
+    font-weight:bold;
+    padding:4px;
+    cursor:pointer;
+    float:right;
+    width:30%;
+}
+
+textarea {
+    box-sizing:border-box;
+    background-color:#282828;
+    width:100%;
+    height:100px;
+}
+
+textarea:focus {
+    outline:none;
+    border:2px solid #F5F5F5;
+}
+
+input[type=submit]:active {
+    border:2px solid #F5F5F5;
+}
+
+
+/* end CONTACT */
+
+
+/* start FOOTER */
+
+footer {
+    text-align: center;
+    padding:10px;
+}
+
+footer a {
+    color:#F5F5F5;
+    font-size:0.8rem;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* end FOOTER */ 
