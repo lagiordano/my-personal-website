@@ -35,10 +35,14 @@ p {
 
 /* NAV bar */
 
-nav {
-    float:right;
-    padding:30px;
+header {
+    position:fixed;
+    top:5%;
+    right:10%;
 }
+
+
+
 
 nav a {
     background-color:#282828;
@@ -48,7 +52,8 @@ nav a {
     margin:0 0 0 30px;
     border:3px solid #282828;
     border-radius: 10px 100px / 120px;
-    position:sticky; /* WHY NOT WORKING? */
+    animation-name:pinks;
+    animation-duration: 3s;
 }
 
 nav a:hover {
@@ -62,6 +67,13 @@ nav a:active {
     background-color:#F5F5F5;
     border-color:#282828;
 }
+
+@keyframes pinks {
+    0% {border-color:#FFC0CB}
+    25% {border-color:#FFB6C1}
+    50% {border-color:#FF69B4}
+    75% {border-color: #FF1493}
+}
  /* end NAV bar */
 
  /* INTRO */
@@ -69,11 +81,10 @@ nav a:active {
 
 main #introduction {
     display:block;
-    clear:right;
     margin:auto;
     width:80%;
     text-align:center;
-    padding-top:5%;
+    padding-top:10%;
 }
 
 
@@ -83,19 +94,11 @@ main #introduction {
     border-radius:2px;
     padding:1% 2% 5% 5%;
     text-align:center;
-    animation-name:rainbow;
+    animation-name:pinks;
     animation-duration:3s;
 }
 
-@keyframes rainbow {
-    0% {border-color:red;}
-    14% {border-color:orange;}
-    28% {border-color:yellow;}
-    42% {border-color: green;}
-    56% {border-color:blue;}
-    70% {border-color:indigo;}
-    84% {border-color:violet;}
-}
+
 
 #info .left {
     text-align: left;
@@ -123,14 +126,17 @@ main #introduction {
     filter:grayscale(0%);
 }
 
+#about p {
+    width:50%;
+}
+
 /* end ABOUT ME */
 
 /* start SKILLS/EXPERIENCE */
 
-
-
-#skills .topics {
-    column-count:2;
+#skills a {
+    color:#F5F5F5;
+    font-style:italic;
 }
 
 #skills ul {
@@ -142,16 +148,20 @@ aside {
     background-color:#282828;
     width:20%;
     padding:2%;
-    margin:0;
+    margin-left:30px;
     border-radius:1%;
     float:right;
 }
 
+aside h4 {
+    font-weight:bold;
+    font-size:1.5em;
+}
+
 /* start WORK */
 
-/* end WORK */
 
-.grid-work {
+#work #gridwork {
     display:grid;
     grid-template:1fr 1fr / 1fr 1fr 1fr;
     gap:1rem;
@@ -192,6 +202,8 @@ aside {
 }
 
 
+/* end WORK */
+
 /* start CONTACT */
 
 table {
@@ -227,6 +239,8 @@ input {
     margin:4px 0;
     background-color:#282828;
     width:100%;
+    color:#F5F5F5;
+    font-family:sans-serif;
 }
 
 input:focus {
@@ -249,6 +263,9 @@ textarea {
     background-color:#282828;
     width:100%;
     height:100px;
+    padding-top:10px;
+    color:#F5F5F5;
+    font-family:sans-serif;
 }
 
 textarea:focus {
