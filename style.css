@@ -1,5 +1,9 @@
 /* global styles */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family:sans-serif;
     background-color:rgb(18, 103, 103);
@@ -28,10 +32,16 @@ h3 {
     font-size:1.5em;
 }
 
+h4 {
+    font-size:1.3em;
+}
+
 p {
     line-height:150%;
     font-size:1em;
 }
+
+
 
 /* NAV bar */
 
@@ -153,10 +163,6 @@ aside {
     float:right;
 }
 
-aside h4 {
-    font-weight:bold;
-    font-size:1.5em;
-}
 
 /* start WORK */
 
