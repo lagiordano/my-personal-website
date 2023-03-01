@@ -177,6 +177,18 @@ aside h4 {
     font-size:2.5rem;
 }
 
+@keyframes pinkwork {
+    0% {background-color:#FFC0CB}
+    25% {background-color:#FFB6C1}
+    50% {background-color:#FF69B4}
+    75% {background-color: #FF1493}
+}
+
+.box:hover {
+    animation: pinkwork 2s infinite
+}
+
+
 .box:first-child {
     background-color: #C0C0C0;
     color:#181818;
