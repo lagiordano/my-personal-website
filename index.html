@@ -34,15 +34,13 @@
                 </section>
             <section id="skills">
                 <h2>My Skills</h2>
-                <aside>
+                <div class="bonus">
                     <h4>As a bonus...</h4>
                     <p>The communication skills I bring from my professional background in health will offer a unique client experience, with genuine receptiveness, and clear and empathetic communication every step of the way</p>
-                </aside>
+                </div>
                 <p>I bring a number of crucial transferable skills from my career in health to any technical project: Multitasking and prioritisation, time-management,
                     organisation, detail orientation, verbal and written communication.</p>
-                <p>Being new to the tech world, I am currently building my skills in software engineering. Luckily, I'm an avid learner and will have plenty of
-                    projects to publich over the coming months throughout my time in the Academy Xi Software Engineering course. At this time, I do not have 
-                    any specific areas of interest, but rather have thrown myself into building a broad base of knowledge and abilities such as:</p>
+                <p>Being new to the tech world, I am currently building my skills in software engineering. Luckily, I'm an avid learner and have thrown myself into building a broad base of knowledge and abilities such as:</p>
                 <div class="topics">
                     <ul>
                         <li>&#9745;&nbsp;&nbsp;&nbsp;HTML</li>
@@ -54,6 +52,7 @@
                     </ul>
                 </div>
                 <p>Interested in my previous education and career? <a href="./Lagiordano_CV.pdf" download="Lagiordano_CV">Take a look.</a></p>
+            </section>
             <section id="work">
                 <h2>My Work</h2>
                 <div id="gridwork">
@@ -65,27 +64,23 @@
             </section>
             <section id="contact">
                 <h2>Get In Contact</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <td>Email:&nbsp;&nbsp;<a href="mailto:laurengiordano94@gmail.com">laurengiordano94@gmail.com</a></td>
-                            <td>Rather me reach out to you? Pop your details in below:</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13249.834073373811!2d151.17750858403932!3d-33.877843190458044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12afd358dba465%3A0x5017d681632b810!2sGlebe%20NSW%202037!5e0!3m2!1sen!2sau!4v1677109917066!5m2!1sen!2sau" width="300" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map depicting Glebe, NSW"></iframe></td>
-                            <td>
-                                <form method="post">
-                                    <input required type="text" id="name" name="name" placeholder="Name (required)"><br>
-                                    <input required type="email" id="email" name="email" placeholder="Email address (required)"><br>
-                                    <input type="text" id="number" name="number" placeholder="Contact number (optional)"><br>
-                                    <textarea id="message" name="message" placeholder="Any other details? (optional)"></textarea><br>
-                                    <input type="submit" value="Submit">
-                                </form>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="container">
+                    <div id="address" class="column">
+                        <p>Email:&nbsp;&nbsp;<a href="mailto:laurengiordano94@gmail.com">laurengiordano94@gmail.com</a></p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13249.834073373811!2d151.17750858403932!3d-33.877843190458044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12afd358dba465%3A0x5017d681632b810!2sGlebe%20NSW%202037!5e0!3m2!1sen!2sau!4v1677109917066!5m2!1sen!2sau" 
+                        width="300" height="300"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map depicting Glebe, NSW"></iframe>
+                    </div>
+                    <div id="contactform" class="column">
+                        <p>Rather me reach out to you? Pop your details in below:</p>
+                        <form method="post">
+                            <input required type="text" id="name" name="name" placeholder="Name (required)"><br>
+                            <input required type="email" id="email" name="email" placeholder="Email address (required)"><br>
+                            <input type="text" id="number" name="number" placeholder="Contact number (optional)"><br>
+                            <textarea id="message" name="message" placeholder="Any other details? (optional)"></textarea><br>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>

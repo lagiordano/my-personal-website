@@ -1,7 +1,6 @@
 /* global styles */
 
 
-
 body {
     font-family:sans-serif;
     background-color:rgb(18, 103, 103);
@@ -10,9 +9,10 @@ body {
     margin:auto;
 }
 
+
 section {
     min-height:100vh;
-}
+} 
 
 h1 {
     font-size:4em;
@@ -91,7 +91,8 @@ main #introduction {
     margin:auto;
     width:80%;
     text-align:center;
-    padding-top:10%;
+    padding-top:15%;
+    min-height:100vh;
 }
 
 
@@ -122,11 +123,10 @@ main #introduction {
 
 /* start ABOUT ME */
 
-
 #about #portrait {
     float:right;
-    width:30%;
-    margin:0 5%;
+    width:27%;
+    margin:0 10%;
     border:5px solid #282828;
     filter:grayscale(100%);
     z-index:-1;
@@ -148,7 +148,7 @@ main #introduction {
 /* start SKILLS/EXPERIENCE */
 
 
-aside {
+.bonus {
     background-color:#282828;
     width:20%;
     padding:2%;
@@ -228,25 +228,27 @@ aside {
 
 /* start CONTACT */
 
-table {
-    width:100%;
+#contact {
+    min-height:95vh;
 }
 
-table td {
-    padding-bottom:2%;
+.column {
+    width:50%;
+    display:inline-block;
+    
 }
 
-table a {
+#contactform {
+    float:right;
+}
+
+ #address a {
     color:#F5F5F5;
     text-decoration: none;
 }
 
-table a:hover {
+#address a:hover {
     text-decoration:underline;
-}
-
-form {
-    width:100%;
 }
 
 ::placeholder {
@@ -257,8 +259,8 @@ form {
 
 input {
     box-sizing:border-box;
-    padding:10px 0;
-    margin:4px 0;
+    padding:10px;
+    margin:5px 0;
     background-color:#282828;
     width:100%;
     color:#F5F5F5;
@@ -286,6 +288,7 @@ textarea {
     width:100%;
     height:100px;
     padding-top:10px;
+    margin:5px 0;
     color:#F5F5F5;
     font-family:sans-serif;
 }
@@ -299,7 +302,6 @@ input[type=submit]:active {
     border:2px solid #F5F5F5;
 }
 
-
 /* end CONTACT */
 
 
@@ -307,7 +309,7 @@ input[type=submit]:active {
 
 footer {
     text-align: center;
-    padding:10px;
+    padding-bottom:30px;
 }
 
 footer a {
